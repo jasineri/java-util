@@ -30,7 +30,7 @@ import java.util.Objects;
 
 /**
  * An alternative to {@link java.util.Optional} for JDK 7
- *
+ * <p>
  * A container object which may or may not contain a non-null value.
  * If a value is present, {@code isPresent()} will return {@code true} and
  * {@code get()} will return the value.
@@ -43,7 +43,6 @@ import java.util.Objects;
  * class; use of identity-sensitive operations (including reference equality
  * ({@code ==}), identity hash code, or synchronization) on instances of
  * {@code Optional} may have unpredictable results and should be avoided.
- *
  */
 public final class Optional<T> {
     /**
