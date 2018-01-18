@@ -1,2 +1,2 @@
-# utils
+# Reusable Java components
 java-util
