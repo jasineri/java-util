@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package common.util;
+package de.jasineri.common.util;
 
 
 import java.util.NoSuchElementException;
