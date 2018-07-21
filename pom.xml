@@ -12,5 +12,56 @@
     <description>Reusable Java components.</description>
     <url>https://github.com/jasineri/java-util</url>
 
+    <dependencies>
+        <!--&lt;!&ndash;Dependencies for Apache Axis2 client&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.axis2</groupId>-->
+            <!--<artifactId>axis2-kernel</artifactId>-->
+            <!--<version>1.7.8</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.axis2</groupId>-->
+            <!--<artifactId>axis2-adb</artifactId>-->
+            <!--<version>1.7.8</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.axis2</groupId>-->
+            <!--<artifactId>axis2-adb-codegen</artifactId>-->
+            <!--<version>1.7.8</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.ws.commons.axiom</groupId>-->
+            <!--<artifactId>axiom-jaxb</artifactId>-->
+            <!--<version>1.2.20</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.axis2</groupId>-->
+            <!--<artifactId>axis2-transport-http</artifactId>-->
+            <!--<version>1.7.8</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.axis2</groupId>-->
+            <!--<artifactId>axis2-transport-local</artifactId>-->
+            <!--<version>1.6.2</version>-->
+        <!--</dependency>-->
 
+        <!--&lt;!&ndash;Dependencies for Apache CXF client&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.cxf</groupId>-->
+            <!--<artifactId>cxf-rt-frontend-jaxws</artifactId>-->
+            <!--<version>3.2.5</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.cxf</groupId>-->
+            <!--<artifactId>cxf-rt-transports-http</artifactId>-->
+            <!--<version>3.2.5</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash;&lt;!&ndash; Jetty is needed if you're are not using the CXFServlet &ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
+        <!--&lt;!&ndash;<groupId>org.apache.cxf</groupId>&ndash;&gt;-->
+        <!--&lt;!&ndash;<artifactId>cxf-rt-transports-http-jetty</artifactId>&ndash;&gt;-->
+        <!--&lt;!&ndash;<version>3.2.5</version>&ndash;&gt;-->
+        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
+
+    </dependencies>
 </project>
