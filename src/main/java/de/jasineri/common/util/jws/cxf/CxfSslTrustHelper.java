@@ -1,5 +1,6 @@
 package de.jasineri.common.util.jws.cxf;
 
+import de.jasineri.common.util.jws.SslTrustHelper;
 import org.apache.cxf.configuration.jsse.TLSClientParameters;
 import org.apache.cxf.endpoint.Client;
 import org.apache.cxf.frontend.ClientProxy;
@@ -32,12 +33,7 @@ public class CxfSslTrustHelper {
      */
     public static void makeCxfWebServiceClientTrustEveryone(Object port) {
         try {
-            SSLContext sslContext = SSLContext.getInstance("SSL");
-            sslContext.init(null, new TrustManager[]{new NaiveX509TrustManager()}, new SecureRandom());
-            HttpsURLConnection.setDefaultSSLSocketFactory(sslContext.getSocketFactory());
-
-            HostnameVerifier hostnameVerifier = (hostname, session) -> true;
-            HttpsURLConnection.setDefaultHostnameVerifier(hostnameVerifier);
+            SslTrustHelper.makeWebServiceClientTrustEveryone(port);
 
             Client client = ClientProxy.getClient(port);
             HTTPConduit conduit = (HTTPConduit) client.getConduit();
@@ -50,18 +46,4 @@ public class CxfSslTrustHelper {
         }
     }
 
-    private static class NaiveX509TrustManager implements X509TrustManager {
-        @Override
-        public void checkClientTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException {
-        }
-
-        @Override
-        public void checkServerTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException {
-        }
-
-        @Override
-        public X509Certificate[] getAcceptedIssuers() {
-            return new X509Certificate[0];
-        }
-    }
 }
